@@ -32,16 +32,17 @@ describe('Testing express routes', () => {
           expect(response.status).toBe(200);
           expect(parsedToken.id).toBeDefined();
           done();
-        })
+        });
     });
   });
 
 
 
-   xdescribe('Resource routes', () => {
+  describe('Resource routes', () => {
     it('should be able to fetch images', async (done) => {
-    const mongoUser = await User.findOne({username: 'userman'});
-    const token = mongoUser.generateToken();
+      const mongoUser = await User.findOne({ username: 'userman' });
+      // console.log(mongoUser);
+      const token = mongoUser.generateToken();
       return request.get('/images')
         .set('Authorization', `Bearer ${token}`)
         .then(response => {
