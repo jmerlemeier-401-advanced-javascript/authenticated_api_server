@@ -3,7 +3,7 @@
 const app = require('../lib/server');
 const User = require('../src/model/user');
 const supergoose = require('./supergoose');
-const request = supergoose.server((app.server));
+const request = supergoose.server((app.app));
 const jwt = require('jsonwebtoken');
 
 beforeAll(supergoose.startDB);
@@ -24,7 +24,7 @@ describe('Testing express routes', () => {
         });
     });
 
-    xit('should be able to sign in', (done) => {
+    it('should be able to sign in', (done) => {
       return request.post('/signin')
         .auth('userman', 'private')
         .then(response => {
