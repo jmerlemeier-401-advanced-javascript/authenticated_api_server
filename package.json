@@ -7,7 +7,7 @@
     "start": "node index",
     "test": "jest --verbose --coverage",
     "test-watch": "jest --verbose --coverage --watch",
-    "lint": "eslint **/*.js --fix",
+    "lint": "eslint '**/*.js' --fix",
     "start:db": "mkdir -p ./db && mongod --dbpath ./db",
     "watch": "nodemon index.js"
   },
