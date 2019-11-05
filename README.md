@@ -5,15 +5,9 @@
 ### Author: Julie Erlemeier and Jonathan Kimball
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
-
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [submission PR](https://github.com/jmerlemeier-401-advanced-javascript/authenticated_api_server/pull/3)
+* [travis](https://www.travis-ci.com/jmerlemeier-401-advanced-javascript/authenticated_api_server)
+* [back-end](https://authenticated-api.herokuapp.com/) (when applicable)
 
 ### Modules
 #### `modulename.js`
