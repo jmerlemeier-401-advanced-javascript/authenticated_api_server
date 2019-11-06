@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index",
     "test": "jest --verbose --coverage",
-    "lint": "eslint **/*.js --fix",
+    "test-watch": "jest --verbose --coverage --watch",
+    "lint": "eslint '**/*.js' --fix",
     "start:db": "mkdir -p ./db && mongod --dbpath ./db",
     "watch": "nodemon index.js"
   },
@@ -24,6 +25,8 @@
     "mongodb-memory-server": "^6.0.1",
     "mongoose": "^5.7.7",
     "morgan": "^1.9.1",
-    "supertest": "^4.0.2"
-  }
+    "supertest": "^4.0.2",
+    "express-swagger-generator": "^1.1.15"
+  },
+  "devDependencies": {}
 }

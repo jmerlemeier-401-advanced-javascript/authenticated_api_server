@@ -3,7 +3,7 @@
 const app = require('../lib/server');
 const User = require('../src/model/user');
 const supergoose = require('./supergoose');
-const request = supergoose.server((app.server));
+const request = supergoose.server((app.app));
 const jwt = require('jsonwebtoken');
 
 beforeAll(supergoose.startDB);
@@ -24,7 +24,7 @@ describe('Testing express routes', () => {
         });
     });
 
-    xit('should be able to sign in', (done) => {
+    it('should be able to sign in', (done) => {
       return request.post('/signin')
         .auth('userman', 'private')
         .then(response => {
@@ -32,16 +32,17 @@ describe('Testing express routes', () => {
           expect(response.status).toBe(200);
           expect(parsedToken.id).toBeDefined();
           done();
-        })
+        });
     });
   });
 
 
 
-   xdescribe('Resource routes', () => {
+  describe('Resource routes', () => {
     it('should be able to fetch images', async (done) => {
-    const mongoUser = await User.findOne({username: 'userman'});
-    const token = mongoUser.generateToken();
+      const mongoUser = await User.findOne({ username: 'userman' });
+      // console.log(mongoUser);
+      const token = mongoUser.generateToken();
       return request.get('/images')
         .set('Authorization', `Bearer ${token}`)
         .then(response => {

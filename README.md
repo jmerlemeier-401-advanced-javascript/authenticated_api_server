@@ -5,15 +5,11 @@
 ### Author: Julie Erlemeier and Jonathan Kimball
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [submission PR](https://github.com/jmerlemeier-401-advanced-javascript/authenticated_api_server/pull/3)
+* [travis](https://www.travis-ci.com/jmerlemeier-401-advanced-javascript/authenticated_api_server)
+* [back-end](https://authenticated-api.herokuapp.com/)
+* [Swagger API Docs](https://authenticated-api.herokuapp.com/api-docs)
 
 ### Modules
 #### `modulename.js`
@@ -43,7 +39,8 @@ Usage Notes or examples
 * What assertions need to be / should be made?
 
 #### UML
-Link to an image of the UML for your application and response to events
+
+![UML](./docs/lab15_uml.jpg "UML")
 
 ***
 
@@ -53,7 +50,7 @@ Link to an image of the UML for your application and response to events
 
 > This is a GRADED pair programming assignment.  Please take the next 2 hours to complete the following tasks.
 
-Implement a fully functional API server *WITH* authentication for sharing images hosted on the internet, using all the coding techiniques we have gone over in the previous 2 blocks.
+Implement a fully functional API server *WITH* authentication for sharing images hosted on the internet, using all the coding techniques we have gone over in the previous 2 blocks.
 
 ### Requirements
 - This project will follow our standard [lab requirements](https://github.com/codefellows/seattle-javascript-401d32/blob/master/reference/submission-instructions/labs/README.md) for configuration, and deployment!
