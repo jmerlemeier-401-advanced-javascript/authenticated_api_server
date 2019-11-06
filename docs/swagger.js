@@ -27,7 +27,8 @@ let options = {
       title: 'authenticated_api_server',
       version: '1.0.0',
     },
-    host: 'localhost:3000',
+    host: 'https://authenticated-api.herokuapp.com/',
+    // host: 'localhost:3000',
     basePath: '/',
     produces: [
       "application/json",
